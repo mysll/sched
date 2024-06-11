@@ -3,9 +3,7 @@ FROM python:3.9
 
 # 安装 cron
 RUN apt-get update && \
-    apt-get install -y cron && \
-    apt-get install -y rsyslog && \
-    rm -rf /var/lib/apt/lists/*
+    apt-get install -y cron
 
 # 创建工作目录
 WORKDIR /app

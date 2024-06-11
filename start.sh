@@ -13,4 +13,4 @@ crontab /etc/cron.d/sched-cron
 touch /var/log/cron.log
 
 # 启动 cron 服务并输出日志
-cron -f
+cron /etc/init.d/cron start && tail -f /var/log/cron.log
