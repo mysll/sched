@@ -1,9 +1,8 @@
 # Dockerfile
-FROM python:3.9
+FROM python:3.10
 
 # 安装 cron
-RUN apt-get update && \
-    apt-get install -y cron
+RUN apt-get update && apt-get install -y cron vim
 
 # 创建工作目录
 WORKDIR /app
