@@ -1,5 +1,5 @@
 # Dockerfile
-FROM python:3.10
+FROM python:3.9-slim-bullseye
 
 # 安装 cron
 RUN apt-get update && apt-get install -y cron vim
